@@ -116,11 +116,13 @@ export default class NavigationBar extends Component {
   };
 
   componentDidMount() {
-    this.customizeStatusBar();
+    // Use StatusBarManager and prevent this lib buggy messing up with statusbar style settings
+    // this.customizeStatusBar();
   }
 
   componentWillReceiveProps() {
-    this.customizeStatusBar();
+    // Use StatusBarManager and prevent this lib buggy messing up with statusbar style settings
+    // this.customizeStatusBar();
   }
 
   customizeStatusBar() {
